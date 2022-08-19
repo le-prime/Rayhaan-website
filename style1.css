@@ -118,6 +118,13 @@ border-radius: 1rem;
 .about div{
     flex:1;
 }
+.prop1{
+    background-color: rgb(236, 235, 235);
+    padding:1.25rem;
+    border-radius: 20px;
+}
+
+
 .information{
 position: relative;
 top : 14rem;
@@ -132,6 +139,8 @@ margin: 3.125rem auto 0 auto;
 line-height: 1.5;
 }
 .figure img{
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
     border-radius:3.25rem;
 }
 .figure
@@ -140,11 +149,28 @@ figcaption{
     margin: 3.125rem auto 0 auto;
     padding-bottom: 0.625rem;
 }
+.cap-1{
+    width :50%;
+    align-items: center;
+    align-content: center;
+    margin-left:17rem;
+    background-color: rgb(236, 235, 235);
+    padding:1.25rem;
+    border-radius: 20px;
+}
+.cap-2{
+    background-color: rgb(236, 235, 235);
+    padding:1.25rem;
+    border-radius: 20px;
+}
 .rooms{
     position: relative;
     top: 15rem;
     text-align: center;
    
+}
+h2{
+    color: hsla(348, 83%, 47%, 0.8);
 }
 .prices{
     display: flex;
@@ -171,3 +197,33 @@ figcaption{
     padding: 15px;
     text-align: center;
   }
+  footer {
+    position: relative;
+    top: 17rem;
+    margin-top: 0.625rem;
+    background-color:rgb(214, 207, 190);
+    padding: 3.25rem;
+  }
+  
+  footer > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer > ul > li {
+    padding: 0 10px;
+  }
+  
+  footer > span {
+    margin-top: 0.625rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+    font-family: 'lato', sans-serif ;
+  }
+.footer-head{
+    font-family: 'Lato', sans-serif;
+    color:hsl(0, 100%, 40%);
+    text-shadow: 2px 2px 5px black;
+}
