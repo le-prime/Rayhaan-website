@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
 :root{
     --padding-medium: 10px;
 }
@@ -79,8 +80,9 @@ a {
 }
 a:hover{
     background-color
-    : red;
+    : hsla(348, 83%, 47%, 0.8);;
     color:white;
+    border-radius: 0.625rem;
 }
 .swiper-container{
     top: 5rem;
@@ -122,6 +124,9 @@ border-radius: 1rem;
     background-color: rgb(236, 235, 235);
     padding:1.25rem;
     border-radius: 20px;
+}
+.prop2{
+    padding: 1.25rem;
 }
 
 
@@ -171,6 +176,8 @@ figcaption{
 }
 h2{
     color: hsla(348, 83%, 47%, 0.8);
+
+   
 }
 .prices{
     display: flex;
@@ -181,7 +188,9 @@ h2{
 .gallery {
     margin: 0.625rem;
     border: 1px solid #ccc;
+    border-radius: 0.625rem;
     width: 250px;
+    padding: 0.125rem;
   } 
 
 .gallery:hover {
@@ -196,6 +205,10 @@ h2{
 .desc {
     padding: 15px;
     text-align: center;
+    color:hsla(348, 83%, 47%, 0.8);
+    font-weight: bold;
+   font-family: 'Tangerine', serif;
+   font-size: 150%;
   }
   footer {
     position: relative;
