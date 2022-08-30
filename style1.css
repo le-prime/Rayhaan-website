@@ -3,6 +3,9 @@
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
 :root{
     --padding-medium: 10px;
+    --medium-font-size: 0.8em;
+    --big-font-size: 1.2em;
+    --padding: 20px;
 }
 
 *{
@@ -12,9 +15,17 @@
 }
 #page-wrapper{
     position: relative;
-    font-size: large;
+    font-size: var(--big-font-size);
     font-family: 'Montserrat', sans-serif;
 
+}
+@media(max-width:500px){
+    #page-wrapper{
+        font-size: small;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
 }
 #header{
     background-color: rgb(214, 207, 190);
@@ -31,6 +42,12 @@
     color: black;
     height:40vh;
 }
+@media (max-width: 600px) {
+    header {
+        width: 100%;
+      flex-wrap: wrap;
+    }
+  }
 #header:hover{
 background-image: url(header-B.jpg);
 
@@ -61,6 +78,23 @@ background-repeat: no-repeat;
     
 }
 
+
+  
+@media (max-width: 550px) {
+    
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 50px;
+    }
+    nav a {
+      padding-bottom: 5px;
+    }
+  }
 h1{
    font-family: 'Lato', sans-serif;
     color:hsl(0, 100%, 40%);
@@ -84,6 +118,13 @@ a:hover{
     color:white;
     border-radius: 0.625rem;
 }
+  .logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 12.5rem;
+    
+    
+  }
 .swiper-container{
     top: 5rem;
     position: relative;
@@ -104,6 +145,14 @@ border-radius: 1rem;
     width: 100%;
     height: 70vh;
 }
+@media (max-width: 550px) {
+    #swiper {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: 150px;
+    }
+  }
 .about{
     position: relative;
     top: 13rem;
@@ -128,7 +177,23 @@ border-radius: 1rem;
 .prop2{
     padding: 1.25rem;
 }
-
+@media (max-width: 550px) {
+    .about {
+       display: flex;
+    flex-direction: column;
+    align-items: center;
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: auto;
+    }
+    .about img{
+        max-width: 400px;
+        width:100%;
+        margin: 0 auto;
+    
+    }
+  }
 
 .information{
 position: relative;
@@ -143,6 +208,12 @@ padding: var(--padding-medium);
 margin: 3.125rem auto 0 auto;
 line-height: 1.5;
 }
+@media (max-width:550px){
+.information{
+    width: 100%;
+    height:auto;
+}
+}
 .figure img{
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
@@ -155,10 +226,9 @@ figcaption{
     padding-bottom: 0.625rem;
 }
 .cap-1{
-    width :50%;
+    
     align-items: center;
     align-content: center;
-    margin-left:17rem;
     background-color: rgb(236, 235, 235);
     padding:1.25rem;
     border-radius: 20px;
@@ -173,6 +243,24 @@ figcaption{
     top: 15rem;
     text-align: center;
    
+}
+@media (max-width:550px){
+    .info-1{
+        width:100%;
+    }
+    .info-1 img{
+        max-width: 100%;
+        height: auto;
+    }
+    .info-2{
+        width: 100%;
+    }
+    .info-2 img{
+        max-width: 100%;
+        height: auto;
+    }
+
+
 }
 h2{
     color: hsla(348, 83%, 47%, 0.8);
