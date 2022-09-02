@@ -8,50 +8,60 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
-
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script src="index.js"></script> -->
     <title>Rayhaan Hotels</title>
 </head>
 <body>
     <!--the header of the part of the page-->
     <div id="page-wrapper">
-    <header id="header">
-            <div id="heading-logo">
-                <div>
-                <h1>RAYHAAN </h1><h3>HOTELS KANO</h3>
+      <div id="header">
+        <div id="heading-logo">
+            <div class="logo">
+                <img src="/images/logo.jpg"alt="Rayhaan Logo" id="header-img">
                 </div>
-                <div class="logo">
-                <img src="logo.jpg"alt="Rayhaan Logo" id="header-img">
-                </div>
-                <div id="book">
-                    <button class="book">Book</button>
-                </div>
-            </div> 
-    
-        <nav class="topnav"> 
-            <a  href="#home">THE HOTEL</a>
-            <a href="#rooms">ROOMS</a>
-            <a href="#contact">CONTACT</a>
-            <a href="#about">ABOUT</a>
-    </nav>
-    
+            <div>
+            <h1>RAYHAAN </h1><h3>HOTELS KANO</h3>
+            </div>
+            <div id="book">
+                <a href="#book">Book</a>
+            </div>
+        </div> 
+        
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+         <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="/index.html">The Hotel</a>
+                <a href="/index-1.html">Rooms</a>
+                <a href="/index2.html">Contact</a>
+                <a href="#about">About</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
 </header>
 <div class="swiper-container" >
-
+          <h1 class="swiper-header">Gallery</h1>
     <!-- Slider main container -->
     <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="img-frontview.jpg"  alt=""></div>
-            <div class="swiper-slide"><img src="img-1.jpg"  alt=""></div>
-            <div class="swiper-slide"><img src="img-lobby.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img-room.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="lobby-1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="lobby2.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="rception-2.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="reception.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img-room3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/img-frontview.jpg"  alt=""></div>
+            <div class="swiper-slide"><img src="/images/img-1.jpg"  alt=""></div>
+            <div class="swiper-slide"><img src="/images/img-lobby.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/img-room.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/lobby-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/lobby2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/rception-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/reception.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/img-room3.jpg" alt=""></div>
 
             
            
@@ -73,13 +83,13 @@
     </p>
   </div>
   <div class="prop2">
-    <img src="img-entrance.jpg" alt="" height="400" width="600"></div>
+    <img src="/images/img-entrance.jpg" alt="" height="400" width="600"></div>
 </div>
 <div class="information">
   
   <div class="info-1">
       <figure class="figure">
-        <img src="image3.jpg" alt="" height="300px" width="400px">
+        <img src="/images/image3.jpg" alt="" height="300px" width="400px">
       </figure>
       <figcaption class="cap-1">
         <h2>RAYHAAN HOTELS</h2>
@@ -91,7 +101,7 @@
 
  <div class="info-2">
     <figure class="figure">
-      <img src="restaurant.jpg" alt="" height="300px" width="400px">
+      <img src="/images/restaurant.jpg" alt="" height="300px" width="400px">
     </figure>
     <figcaption class="cap-2">
       <h2>RESTAURANT</h2>
@@ -111,6 +121,7 @@
         <img src="rooms/economy.jpg" alt="economy" width="600" height="400">
       </a>
       <div class="desc">Economy ₦20000</div>
+      <hr>
     </div>
     
     <div class="gallery">
@@ -118,6 +129,7 @@
         <img src="rooms/standard.jpg" alt="standard" width="600" height="400">
       </a>
       <div class="desc">Standard ₦25000</div>
+      <hr>
     </div>
     
     <div class="gallery">
@@ -125,6 +137,7 @@
         <img src="rooms/executive.jpg" alt="executive" width="600" height="400">
       </a>
       <div class="desc"> Executive ₦27000</div>
+      <hr>
     </div>
     
     <div class="gallery">
@@ -132,30 +145,35 @@
         <img src="rooms/luxury.jpg" alt="luxury" width="600" height="400">
       </a>
       <div class="desc">Luxury ₦32000</div>
+      <hr>
     </div>
     <div class="gallery">
       <a target="_blank" href="rooms/super-luxury.JPG">
         <img src="rooms/super-luxury.JPG" alt="super" width="600" height="400">
       </a>
       <div class="desc">Super-Luxury ₦37000</div>
+      <hr>
     </div>
     <div class="gallery">
       <a target="_blank" href="rooms/deluxe.jpg">
         <img src="rooms/deluxe.jpg" alt="deluxe" width="600" height="400">
       </a>
       <div class="desc">Deluxe ₦40000</div>
+      <hr>
     </div>
     <div class="gallery">
       <a target="_blank" href="rooms/royal.jpg">
         <img src="rooms/royal.jpg" alt="royal" width="600" height="400">
       </a>
       <div class="desc">Royal ₦48000</div>
+      <hr>
     </div>
     <div class="gallery">
       <a target="_blank" href="rooms/rayhaan-suite.JPG">
         <img src="rooms/rayhaan-suite.JPG" alt="Rayhaan" width="600" height="400">
       </a>
       <div class="desc"> Rayhaan Suites ₦80000</div>
+      <hr>
     </div>
   </div>
 </div>
@@ -163,7 +181,7 @@
   <div>
     <h2 class="footer-head">RAYHAAN HOTELS</h2>
     <p> Address: Plot 27/28, Opposite AKTH Southern Gate, Behind Federal Government College, Off zaria Road Kano.</p>
-    <p>Tel: 08039642061, 09099066666, 08053304185 </p>
+    <p type="tel">Tel: 08039642061, 09099066666, 08053304185 </p>
   </div>
   <ul>
     <li><a href="#">Contact</a></li>
@@ -171,6 +189,7 @@
   <span class="copyright">Copyright 2022, Rayhaan Hotels</span>
 </footer>
 </div>
+<script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>const swiper = new Swiper('.swiper', {
     // Optional parameters
