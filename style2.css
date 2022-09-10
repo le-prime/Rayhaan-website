@@ -4,7 +4,7 @@
 :root{
     --padding-medium: 10px;
     --medium-font-size: 0.8em;
-    --big-font-size: 1.2em;
+    --big-font-size: 1em;
     --padding: 20px;
 }
 
@@ -13,9 +13,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+#page-wrapper{
+    position: relative;
+
+    font-family: 'Montserrat', sans-serif;
+}
 body{
     background: white;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 #header{
     background-color: rgb(214, 207, 190);
@@ -28,10 +33,10 @@ body{
     align-items: center;
     border-bottom: 1px solid black;
     color: black;
-    height:fit-content;
+    height:40vh;
 }
 #header:hover{
-    background-image: url(/images/header-B.jpg);
+    background-image: url(images/header-B.jpg);
     color: white;
     background-size: contain;
     background-repeat: no-repeat;
@@ -81,20 +86,34 @@ a {
     display: block;
 }
 a:hover{
-    color:white;
+    color:white; 
+    background-color: hsla(348, 83%, 47%, 0.8);
+    border-radius: 0.625rem;
 }
 .logo > img {
-    width: 50px;
-    height: 50px;
+    width: 90%;
+    height: 90%;
     max-width: 12.5rem;
 }    
 .icon{
     display: none;
 }
   .container{
-      margin: 20px;
+    margin: 20px;
     padding: 0;
     text-align: center;
+  }
+  h2{
+    color: hsla(348, 83%, 47%, 0.8);
+    text-align: center;
+    top: 1rem;
+    padding:var(--padding-medium);
+  }
+  h4{
+    color: hsla(348, 83%, 47%, 0.8);
+    text-align: center;
+    top: 1rem;
+    padding:var(--padding-medium);
   }
   .economy{ 
    display: grid;
@@ -102,7 +121,7 @@ a:hover{
    grid-auto-rows: 18.75rem 18.75rem;
    grid-gap: 15px;
    padding: 5rem;
-   background-color: #fff6ea;
+   background-color: rgb(236, 235, 235);
    border-radius: 1rem;
   }
 
@@ -168,6 +187,10 @@ h4{
        position: absolute;
        left: 5%;
     }
+    .logo> img{
+        height: 50px;
+        width: 50px;
+    }
     #header{
         min-height: 10vh;
         height: fit-content;
@@ -229,4 +252,11 @@ h4{
         background-size: contain;
         background-repeat: no-repeat;
     }
-    }
+    .economy{ 
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       padding: 0;
+       grid-gap:0;
+       }
+   
+    } 
